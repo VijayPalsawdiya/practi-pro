@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>Binding Func</head>
+	
+	<body>
+		<p id="demo"></p>
+	<script>
+	
+		this.name = "Zack";
+		this.name = "Jack";
+		
+		const fName = {
+		 	name : "Dagon",
+		 	
+		 	getfName: function(){
+		 	   return this.name;
+		 	}
+		};
+		
+		const lName = {
+			name : "Redfield",
+			
+			getlName : function() {
+				return this.name; 
+			}
+			
+		};
+		
+		const fNameVal = fName.getfName;
+		
+		console.log(fNameVal());
+	
+	</script>
+	
+
+	
+	</body>
+</html>

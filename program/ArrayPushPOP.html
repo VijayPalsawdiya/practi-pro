@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <button type="button" onclick="pushFunc()">Add Ram via Push</button>
+        <button type="button" onclick="popFunc()">Remove via pop</button>
+        <button type="button" onclick="shiftFunc()">Remove via shift</button>
+        <button type="button" onclick="unshiftFunc()">ADD via unshift</button>
+        <button type="button" onclick="deleteFunc()">Delete index[0]</button>
+	<button type="button" onclick="spliceFunc()">Splice add 3 remove 0</button>
+        <script>
+            const name = ["Rahul","Vijay","Ajay","kartik"];
+            
+
+            document.getElementById("demo").innerHTML = name;
+
+
+            function pushFunc(){
+                name.push("Ram");
+
+                document.getElementById("demo").innerHTML = name;
+            }
+
+
+            function popFunc(){
+                name.pop();
+
+                document.getElementById("demo").innerHTML = name;
+            }
+
+            function shiftFunc(){
+                name.shift();
+
+                document.getElementById("demo").innerHTML = name;
+            }
+
+            function unshiftFunc(){
+                name.unshift("ABC");
+
+                document.getElementById("demo").innerHTML = name;
+            }
+
+            function deleteFunc(){
+
+                delete name[0];
+
+                document.getElementById("demo").innerHTML = name;
+            }
+            
+            function spliceFunc(){
+            	name.splice(2,1,"onkar","kamlesh","kunal");
+            	
+            	document.getElementById("demo1"),innerHTML ="New Array is:" + name;
+            }
+            
+            function sliceFunc(){
+            	name.slice(1,3);
+            	
+            	document.getElementById("demo").innerHTML = name;
+            }
+        </script>
+
+        
+    </body>
+</html>

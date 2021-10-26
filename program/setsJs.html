@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head></head>
+	<body>
+	<p id="demo"></p>
+	  <script>
+	   const letters = new Set(["a","b","c"]);
+	   
+	   letters.add("ab"); 
+	   letters.delete("b"); 
+	   letters.has("ab");
+	    
+	  // console.log(letters.size);
+	  // console.log(letters);
+	   
+	 let txt = "";
+	/*	for(let i of letters.values())
+		{
+		txt += i + "<br>";
+		}
+	*/
+	
+	letters.forEach(function(number){
+	 console.log(number);  
+	   document.getElementById("demo").innerHTML = number;
+	   });
+	  </script>
+	</body>
+</html>

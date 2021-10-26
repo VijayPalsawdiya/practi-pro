@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>CallBack Function</head>
+    
+    <body>
+
+        <p id="demo"></p>
+        <script>
+          
+		function disp(some) {
+		document.getElementById("demo").innerHTML = some;
+		}
+		
+		function addFunc(a,b,callback){
+		let sum = a+b;
+		callback(sum);
+		
+		}
+		
+		addFunc(5,5,disp)
+		
+        </script>
+        
+    </body>
+</html>

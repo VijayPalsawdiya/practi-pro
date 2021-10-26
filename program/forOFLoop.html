@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head></head>
+	
+	<body>
+		<p id="demo"></p>
+	<script>
+	
+	const name = ["sd","wd","dahbd","asdaa"];
+	name.greet = "Hello";
+	
+	for(let bigg of name){
+		console.log(bigg);
+		
+		document.getElementById("demo").innerHTML = name.greet;
+	}
+	
+	let txt = "";
+	for(let i=0; i<=name.length; i++)
+	{
+		txt += name[i] +"<br>";
+	 document.getElementById("demo").innerHTML = txt;
+	}
+	
+	
+	
+	</script>
+	
+
+	
+	</body>
+</html>

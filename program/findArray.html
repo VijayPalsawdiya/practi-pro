@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head></head>
+	<body>
+	
+	<p id="demo"></p>
+		<script>
+		const number = [12,34,65,23,2,14,54];
+		
+		let findValue = number.find(myFunc);
+		
+		document.getElementById("demo").innerHTML ="Number is: " + findValue ;
+		
+		function myFunc(value){
+		return value > 17;
+		}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head></head>
+	
+	<body>
+		<p id="demo"></p>
+	<script>
+	
+	const Details ={
+		fName:"Rahul",
+		lname:"saaj",
+		age:43,
+
+		place: {
+		  country:"India",
+		  city:"Indore",
+		  add:"near_Rajwada",
+		  
+		  friends:["a","b","c"],
+		}
+		
+	}
+	
+	const {fName,age,...allD} = Details;
+	
+	console.log(fName);
+	console.log(age);
+	console.log(allD);
+	console.log(allD.place.city);
+	console.log(allD.place.friends);
+	
+	
+	</script>
+	
+
+	
+	</body>
+</html>

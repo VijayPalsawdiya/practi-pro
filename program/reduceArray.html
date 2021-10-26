@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head></head>
+	<body>
+	
+	<p id="demo"></p>
+	
+	<script>
+		const number = [21,32,45,65,76,8];
+		let sum = number.reduce(myFunc, 10);
+		
+		document.getElementById("demo").innerHTML ="This Sum is = " +sum;
+		
+		function myFunc(total, value){
+			return total + value;
+		}
+		
+	</script>	
+	</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>Example</head>
+    <body style="text-align: center; t" >
+        
+        <input type="text" id="name"/> 
+        <input type="button" onclick="addItems()" value="Add"/>
+        <input type="button" onclick="editItems()" value="Edit"/>
+      
+        <ul id="box">
+
+        </ul>
+	
+       <script>
+           function addItems(){
+               let name=document.getElementById("name").value;
+               let box = document.getElementById("box");
+               let li = document.createElement("li");
+               
+               if(name==''){
+                   alert("plz enter somthing");
+               }else
+               {
+                   document.getElementById("name").value = '';
+                   li.textContent = name;
+                   box.appendChild(li);
+               }
+               
+               function editItems(){
+                li.textContent = name;
+                box.appendChild(li);   
+               }
+               
+           }
+        </script>
+    </body>
+</html>

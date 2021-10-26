@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>JS Event</head>
+    <body>
+        <h1> events </h1>
+
+        <input type="text" id="myinput" onfocus="focusFunction()">
+
+        <script>
+            function focusFunction(){
+                document.getElementById("myinput").style.background="yellow";
+            }
+
+            function blurFunction(){
+                document.getElementById("myinput").style.background="red";
+            }
+
+            function clickFunction(){
+               var x = document.getElementById("myinput");
+               x.value = x.value.toUpperCase();
+            }
+        </script>
+
+        <button type="button" onblur="blurFunction()">Focus&Blur</button>
+        <button type="button" onclick="clickFunction()">CLick</button>
+        
+
+</body>
+</html>

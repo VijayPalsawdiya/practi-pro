@@ -1,0 +1,11 @@
+{
+
+"firstname" : "Rahul",
+"lastname" : "Rana",
+"city" : "Indore",
+"address" : "near Rajwada",
+"country" : "India",
+"friends" : ["Raj","Ram","Rajan"],
+"passport" : false,
+"age" : null
+}

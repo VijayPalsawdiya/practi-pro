@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>    </head>
+
+    <body> 
+        <h2>List of Cars</h2>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        
+
+        <h3>list of Bikes</h3>
+        <p id="bike"></p>
+
+        <h3>toString:</h3>
+        <p id="demo4"></p>
+
+        <h3>Join (=)</h3>
+        <p id="demo5"></p>
+        <script>
+            const cars = ["BMW", "Audi", "Saab", "Volvo", "Merc", "Lambo"];
+            let cLen = cars.length; 
+
+            let text = "<ul>";
+            for (let i = 0; i < cLen; i++) {
+            text += "<li>" + cars[i] + "</li>";
+            }
+            text += "</ul>";
+            
+            document.getElementById("demo").innerHTML = text;
+            document.getElementById("demo1").innerHTML = "Length is:" + text.length;
+            document.getElementById("demo2").innerHTML = cars[cars.length-1];
+
+/* --------------------------------------------------------------------------*/
+            const bike = ["Honda","Hero","KTM", "BMW"];
+
+            let txt = "<ul>";
+                bike.forEach(myFunction);
+
+                txt += "</ul>";
+            function myFunction(value){
+               txt += "<li>" + value + "</li>"
+            }
+
+            document.getElementById("bike").innerHTML = txt;
+            document.getElementById("demo4").innerHTML = bike.toString();
+            document.getElementById("demo5").innerHTML = bike.join("=");
+            
+        </script>
+           
+    </body>
+</html>

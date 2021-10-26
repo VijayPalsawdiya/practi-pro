@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head></head>
+	<body>
+	
+	<p id="demo"></p>
+	
+	<script>
+	function disp(some)
+	{
+	document.getElementById("demo").innerHTML = some;
+	}
+	
+	async function myFunc() { 
+	return "heyy"; 
+	}
+	
+	
+	myFunc().then(
+		function(value)  {disp(value)},
+		function(error)  {disp(error)}
+ 	);
+	</script>	
+	</body>
+</html>

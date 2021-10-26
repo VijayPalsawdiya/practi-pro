@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>Infinity</head>
+    <body>
+
+        <p id="demo"></p>
+        <p id="show"></p>
+        
+        <script>
+            let myNumber = 2;
+            let txt = "";
+
+            while(myNumber != Infinity)
+            {
+                myNumber = myNumber * myNumber;
+                txt = txt + myNumber + "<br>";
+
+                document.getElementById("demo").innerHTML = txt;
+            }
+
+            let x = 2/0;
+            let y = -2/0;
+
+            document.getElementById("show").innerHTML = x + " " + y;
+        </script>
+
+       
+    </body>
+</html>

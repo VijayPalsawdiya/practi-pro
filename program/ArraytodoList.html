@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>Todo </head>
+    <body style="text-align: center; t" >
+        
+        <input type="text" id="txt"/> 
+        <input type="button" onclick="addItems()" value="Add"/>
+      	<input type="button" onclick="editItems()" value="Edit"/>
+        <ul id="box">
+        <li>hello</li>
+        <li>heyyo</li>
+        </ul>
+	
+       <script>
+       	var items = document.querySelectorAll("#box li"),
+
+       	input = document.getElementById("txt"),
+  		 box = ["a","b"]; 
+  		 var = liIndex;
+/*  		
+  		function addItems(){
+  		if(input == '')
+  		{
+  		alert("plz entr vlue");
+  		}else{
+  		  
+  		  for(var i=0;  i< items.length; i++)
+  		  {
+  		  //const add = value.push(input[i].innerHTML);
+  		  //let box = document.getElementById("box");
+  		  //let li = document.createElement("li");
+  		 
+  		  box.push(items[i].innerHTML);
+  		 
+  		  }
+  		 }
+  		}
+	*/
+			
+			
+	for(var i=0;  i< items.length; i++){
+  		  box.push(items[i].innerHTML);
+  		  document.getElementById("box").innerHTML = box;
+  		  }		  		
+  		
+  	for(var i=0;  i< items.length; i++){
+  		items[i].onclick = function(){
+  			
+  		input.value = this.innerHTML;
+  		liIndex = box.indexOf(this.innerHTML);
+  		console.log(this.innerHTML += "=" + liIndex);
+  		};
+  	}
+  	
+  	function editItems(){
+  	items[liIndex].innerHTML = input.value;
+  	
+  	box.length =0;
+  	
+  	for(var i=0;  i< items.length; i++){
+  		  box.push(items[i].innerHTML);
+  		  }
+  	}
+       </script>
+    </body>
+</html>

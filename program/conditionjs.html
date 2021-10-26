@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head></head>
+	
+	<body>
+		<p id="demo"></p>
+		<input type="text" id="age"/>
+		<button type="button" onclick="myFunc()">Enter</button>
+	<script>
+		
+		function myFunc(){
+		let age = document.getElementById("age").value;
+		
+		let vote = (age < 18) ? "hy" : "hello" ;
+		
+		document.getElementById("demo").innerHTML = vote;
+		}
+	</script>
+	
+
+	
+	</body>
+</html>
